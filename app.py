@@ -9,8 +9,8 @@ app.secret_key = "supersecret"  # Needed for flash messages
 UPLOAD_FOLDER = "/data"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
-MAX_FILE_SIZE = 150 * 1024 * 1024      # 10 MB max per file
-MAX_TOTAL_STORAGE = 1000 * 1024 * 1024 # 1 GB total
+MAX_FILE_SIZE = 5000 * 1024 * 1024      # 10 MB max per file
+MAX_TOTAL_STORAGE = 50000 * 1024 * 1024 # 1 GB total
 app.config['MAX_CONTENT_LENGTH'] = MAX_FILE_SIZE
 
 # HTML template
